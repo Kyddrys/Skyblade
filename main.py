@@ -1,5 +1,3 @@
-Python 3.13.5 (tags/v3.13.5:6cb20a2, Jun 11 2025, 16:15:46) [MSC v.1943 64 bit (AMD64)] on win32
-Enter "help" below or click "Help" above for more information.
 import discord
 from discord.ext import commands
 import easyocr
@@ -250,7 +248,7 @@ async def on_message(message: discord.Message):
 
 # -------------------- BOTU ÇALIŞTIR --------------------
 if __name__ == "__main__":
-    TOKEN = os.getenv("TOKEN")  # Railway'den TOKEN değişkenini oku
+    TOKEN = os.getenv("TOKEN")
     if not TOKEN:
         raise ValueError("❌ TOKEN environment variable is not set!")
     bot.run(TOKEN)
