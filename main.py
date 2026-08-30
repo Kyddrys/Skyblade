@@ -250,7 +250,7 @@ async def on_message(message: discord.Message):
 
 # -------------------- BOTU ÇALIŞTIR --------------------
 if __name__ == "__main__":
-    TOKEN = os.getenv("MTU0MzQxMjk4MDc3ODI3NDg4Ng.G_WRcL.5qa2wqK39yHbjyWbO4uuG-zL28H3t2ACi0KSN0")  # Railway'den TOKEN değişkenini oku
+    TOKEN = os.getenv("TOKEN")  # Railway'den TOKEN değişkenini oku
     if not TOKEN:
         raise ValueError("❌ TOKEN environment variable is not set!")
     bot.run(TOKEN)
